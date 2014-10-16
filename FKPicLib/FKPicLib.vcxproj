@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{54311D21-98BA-4254-B9CB-8957C32ED2DC}</ProjectGuid>
+    <RootNamespace>FKPicLib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\FKFile.h" />
+    <ClInclude Include="Include\FKFileJpg.h" />
+    <ClInclude Include="Include\FKImage.h" />
+    <ClInclude Include="Include\FKImageBmp.h" />
+    <ClInclude Include="Include\FKImageExifInfo.h" />
+    <ClInclude Include="Include\FKImageFKP.h" />
+    <ClInclude Include="Include\FKImageIterator.h" />
+    <ClInclude Include="Include\FKImageJpeg.h" />
+    <ClInclude Include="Include\FKImagePng.h" />
+    <ClInclude Include="Include\FKIOFile.h" />
+    <ClInclude Include="Include\FKMemFile.h" />
+    <ClInclude Include="Include\FKPicCommonDef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\FKFileJpg.cpp" />
+    <ClCompile Include="Source\FKImage.cpp" />
+    <ClCompile Include="Source\FKImageBmp.cpp" />
+    <ClCompile Include="Source\FKImageExifInfo.cpp" />
+    <ClCompile Include="Source\FKImageFKP.cpp" />
+    <ClCompile Include="Source\FKImageIterator.cpp" />
+    <ClCompile Include="Source\FKImageJpeg.cpp" />
+    <ClCompile Include="Source\FKImagePng.cpp" />
+    <ClCompile Include="Source\FKIOFile.cpp" />
+    <ClCompile Include="Source\FKMemFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JPEG\Jpeg.vcxproj">
+      <Project>{46fea7d9-9120-4342-8523-fd00299fcde6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PNG\png.vcxproj">
+      <Project>{25e853ee-e2d4-4648-863f-9d76142e8760}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ZIP\zlib.vcxproj">
+      <Project>{7e3474bd-465c-4d78-823e-b6d4f65b691f}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

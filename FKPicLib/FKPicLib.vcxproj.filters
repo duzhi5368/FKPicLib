@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\支持图片类型">
+      <UniqueIdentifier>{82925978-d5d1-4da5-9a3c-7f8944dce58f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\支持图片类型">
+      <UniqueIdentifier>{752e7522-20c4-427e-8cc8-a8d6724ccece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\支持图片类型\BMP">
+      <UniqueIdentifier>{50be0fd7-e889-46b8-821a-0ffe52d11a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\支持图片类型\JPG">
+      <UniqueIdentifier>{9d222273-33f4-4983-a5b7-36854958f79d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\支持图片类型\BMP">
+      <UniqueIdentifier>{d0717195-b22e-478a-a5bd-8675f936f71c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\支持图片类型\JPG">
+      <UniqueIdentifier>{f0186e7f-2b78-4499-8a36-79ceb8b363c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\支持图片类型\PNG">
+      <UniqueIdentifier>{d98e4ef1-df17-428d-b617-12049cd58366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\支持图片类型\PNG">
+      <UniqueIdentifier>{285eb7b5-2029-44eb-8dee-82164abf91d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\支持图片类型\FKP">
+      <UniqueIdentifier>{70e3b1d7-b5f6-45f3-b989-c3075a9680b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\支持图片类型\FKP">
+      <UniqueIdentifier>{8a2c4570-b108-487a-af11-34bc5bb0e384}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Include\FKPicCommonDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKIOFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKMemFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKImage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKImageIterator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKImageBmp.h">
+      <Filter>头文件\支持图片类型\BMP</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKImageJpeg.h">
+      <Filter>头文件\支持图片类型\JPG</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKFileJpg.h">
+      <Filter>头文件\支持图片类型\JPG</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKImageExifInfo.h">
+      <Filter>头文件\支持图片类型\JPG</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKImagePng.h">
+      <Filter>头文件\支持图片类型\PNG</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\FKImageFKP.h">
+      <Filter>头文件\支持图片类型\FKP</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\FKIOFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKMemFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKImage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKImageIterator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKImageBmp.cpp">
+      <Filter>源文件\支持图片类型\BMP</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKFileJpg.cpp">
+      <Filter>源文件\支持图片类型\JPG</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKImageExifInfo.cpp">
+      <Filter>源文件\支持图片类型\JPG</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKImageJpeg.cpp">
+      <Filter>源文件\支持图片类型\JPG</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKImagePng.cpp">
+      <Filter>源文件\支持图片类型\PNG</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\FKImageFKP.cpp">
+      <Filter>源文件\支持图片类型\FKP</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
