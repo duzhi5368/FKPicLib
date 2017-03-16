@@ -3,3 +3,4 @@ This is a lib for custom picture's format.You can convert jpg, png, bmp others, 
 
 * 这是一个自定义图片格式，扩展性强，可支持多种格式的图片互相转换。
 * 自定义的FKP格式压缩率比普通PNG格式小40%，且没有精度丢失，带Aplha通道。
+* 内置格式转换工具（MFC编写）
